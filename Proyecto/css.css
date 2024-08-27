@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.cards{text-align: center;}
+.container{text-align: center;}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el footer use todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p {
+    margin-bottom: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
